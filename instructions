@@ -1,0 +1,20 @@
+https://shopify.com/admin/bulk?resource_name=Product&edit=metafields.global.isbn:string
+
+<!--Two metafields and the variant SKU
+You can display more than one metafield in the bulk editor by separating them with commas. 
+This URL combines the ISBN metafield with a cost metafield and the product variant SKU: -->
+https://shopify.com/admin/bulk?resource_name=Product&
+edit=metafields.global.isbn:string,metafields.josh.cost:money,variants.sku
+
+https://shopify.com/admin/bulk?
+resource_name=Product&
+edit=metafields.global.ibsn:string,metafields.global.hardcover:boolean,
+metafields.global.genre:select&
+metafield_titles[metafields.global.ibsn]=ISBN%20%F0%9F%94%96&
+metafield_options[metafields.global.genre][1]=Horror&
+metafield_options[metafields.global.genre][2]=Romance&
+metafield_options[metafields.global.genre][3]=Fantasy&
+metafield_options[metafields.global.genre][4]=Sci-fi&
+metafield_titles[metafields.global.genre]=Genre%20%F0%9F%8E%A8&
+metafield_titles[metafields.global.hardcover]=Hardcover%20%F0%9F%93%9A&
+return_to=/admin/apps/elite-bookseller
